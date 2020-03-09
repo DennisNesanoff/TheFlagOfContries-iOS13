@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		8DED58E324156ED5004EECD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED58E224156ED5004EECD0 /* AppDelegate.swift */; };
 		8DED58E524156ED5004EECD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED58E424156ED5004EECD0 /* SceneDelegate.swift */; };
-		8DED58E724156ED5004EECD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED58E624156ED5004EECD0 /* ViewController.swift */; };
 		8DED58EA24156ED5004EECD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED58E824156ED5004EECD0 /* Main.storyboard */; };
 		8DED58EC24156ED7004EECD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED58EB24156ED7004EECD0 /* Assets.xcassets */; };
 		8DED58EF24156ED7004EECD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED58ED24156ED7004EECD0 /* LaunchScreen.storyboard */; };
+		8DED58F724163358004EECD0 /* Redme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8DED58F624163358004EECD0 /* Redme.rtf */; };
+		8DED58F9241634A8004EECD0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED58F8241634A8004EECD0 /* MainTableViewController.swift */; };
+		8DED58FB24165A32004EECD0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED58FA24165A32004EECD0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8DED58DF24156ED5004EECD0 /* TheFlagOfContries-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheFlagOfContries-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED58E224156ED5004EECD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED58E424156ED5004EECD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DED58E624156ED5004EECD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8DED58E924156ED5004EECD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DED58EB24156ED7004EECD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DED58EE24156ED7004EECD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DED58F024156ED7004EECD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DED58F624163358004EECD0 /* Redme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Redme.rtf; sourceTree = "<group>"; };
+		8DED58F8241634A8004EECD0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		8DED58FA24165A32004EECD0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		8DED58D624156ED5004EECD0 = {
 			isa = PBXGroup;
 			children = (
+				8DED58F624163358004EECD0 /* Redme.rtf */,
 				8DED58E124156ED5004EECD0 /* TheFlagOfContries-iOS13 */,
 				8DED58E024156ED5004EECD0 /* Products */,
 			);
@@ -58,8 +63,9 @@
 			children = (
 				8DED58E224156ED5004EECD0 /* AppDelegate.swift */,
 				8DED58E424156ED5004EECD0 /* SceneDelegate.swift */,
-				8DED58E624156ED5004EECD0 /* ViewController.swift */,
 				8DED58E824156ED5004EECD0 /* Main.storyboard */,
+				8DED58F8241634A8004EECD0 /* MainTableViewController.swift */,
+				8DED58FA24165A32004EECD0 /* DetailViewController.swift */,
 				8DED58EB24156ED7004EECD0 /* Assets.xcassets */,
 				8DED58ED24156ED7004EECD0 /* LaunchScreen.storyboard */,
 				8DED58F024156ED7004EECD0 /* Info.plist */,
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DED58F724163358004EECD0 /* Redme.rtf in Resources */,
 				8DED58EF24156ED7004EECD0 /* LaunchScreen.storyboard in Resources */,
 				8DED58EC24156ED7004EECD0 /* Assets.xcassets in Resources */,
 				8DED58EA24156ED5004EECD0 /* Main.storyboard in Resources */,
@@ -138,9 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DED58E724156ED5004EECD0 /* ViewController.swift in Sources */,
 				8DED58E324156ED5004EECD0 /* AppDelegate.swift in Sources */,
+				8DED58F9241634A8004EECD0 /* MainTableViewController.swift in Sources */,
 				8DED58E524156ED5004EECD0 /* SceneDelegate.swift in Sources */,
+				8DED58FB24165A32004EECD0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
