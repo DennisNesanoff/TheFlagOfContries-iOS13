@@ -9,22 +9,25 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet var imageView: UIImageView!
+    
+    var selectImage: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        navigationItem.largeTitleDisplayMode = .never
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        
+        imageView.image = UIImage(named: selectImage!)
+        imageView.backgroundColor = UIColor.systemGray4
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func shareTapped() {
+        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else { return }
+        
+        let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        activityVC.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem // for iPad
+        present(activityVC, animated: true)
     }
-    */
-
 }
